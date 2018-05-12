@@ -49,11 +49,11 @@ class userAuth extends Controller
 
         session()->put('varify',$val->email);
 
-        //-------------------------------sanding mai------------------------------
+        //-------------------------------sanding mail------------------------------
         $data=array('mgs'=>'hello','otp'=>$otp);
         $view='verification';
-        $from='yantra2k17@gmail.com';
-        $fromname='Admin yantragene 2k17';
+        $from='admin@yantragene.co.in';
+        $fromname='Admin yantragene 2k18';
         $sub='registration';
         $to=$val->email;
         $toname=$val->name;
@@ -75,13 +75,25 @@ class userAuth extends Controller
         }
         else{
             $rq->session()->forget('varify');
+            $user = DB::table('users')
+                    ->where('email','=',$em)->first();
+            $data=array('mgs'=>'ok','user'=>$user);
+            $view='registration';
+            $from='admin@yantragene.co.in';
+            $fromname='Admin yantragene 2k18';
+            $sub='registration successful';
+            $to=$em;
+            $toname=$user->name;
+            $redi='';
+            mailController::basic_mail($data,$view,$to,$toname,$sub,$from ,$fromname,$redi);
+
             DB::table('otps')
                 ->where('email','=',$em)
                 ->delete();
             DB::table('users')
                 ->where('email','=',$em)
                 ->update(['status'=>'1']);
-            return redirect('/');
+            return view('loginReg')->with(['smgs'=>'!! congratulation! you are successfully complete your registration']);
         }
     }
 

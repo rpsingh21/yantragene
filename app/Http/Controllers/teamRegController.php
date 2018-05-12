@@ -105,7 +105,9 @@ class teamRegController extends Controller
                 }
                 //====================sanding mail to each member======================
                 /*$en=DB::table('event')->select('eventName')->where('eventId','=',$eventId)->get()->first();
-                $data=['teamName'=>$teamName,'eventName'=>$en->eventName,'members'=>$memberEmail];*/
+                $data=['teamName'=>$teamName,'eventName'=>$en->eventName,'members'=>$memberEmail];
+                mailController::multi_mail($data,)
+                */
 
                 $arr['success']="Successfully Registered";
                 echo json_encode($arr);

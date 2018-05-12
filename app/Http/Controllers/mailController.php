@@ -13,7 +13,7 @@ class mailController extends Controller
                     ->subject($sub);
             $message->from($from,$fromname);
         });
-        echo "Basic Email Sent. Check your inbox.";
+        // echo "Basic Email Sent. Check your inbox.";
     }
     public static function multi_mail($data,$view,$emails,$sub,$from){
         Mail::send($view,$data, function($message) use ($emails,$sub,$from)
