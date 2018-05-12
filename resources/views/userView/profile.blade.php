@@ -68,7 +68,7 @@
         </div>
         <div class="user">
             <div>
-                <img src="{{url('/public/yantraPublic/img')}}/cordinator.png" class="userimg" alt="image not found"/>
+                <img src="{{url('/yantraPublic/img')}}/cordinator.png" class="userimg" alt="image not found"/>
             </div>
             <br>
             <span>Hello {{$userName}}</span><br>
@@ -104,5 +104,16 @@
         </div>
     </main>
 </div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115331050-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115331050-1');
+</script>
+
 </body>
 </html>

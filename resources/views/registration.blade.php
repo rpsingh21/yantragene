@@ -24,12 +24,16 @@
                     </div>
                 </center>
                 <div class="border">
-                    <p>We have received your request for registration to become an active participant in our technical fest Yantragene needed to verify your email address.</p>
-                    <center>
-                        <h3> your verification code is<h1 style="color:green"> {{$otp}}</h1></h3>
-                    </center>
-                    <p>For any queries and additional information,  contact to event co-ordinator Or send mail at: fest@yantragene.co.in</p>
+                  <p>
+                    Dear candidate {{ $user->name }},
+                  </p>
+                  <p> &nbsp; &nbsp; &nbsp; &nbsp;congratulation! you are successfully complete your registration. now you are able to register any event. Event registration guideline, rule and Description are available on the event page.
+                  </p>
+                  <p style="font-color:yellow;">for any event registrations required for login. </p>
                 </div>
+              <center>
+                <a href="https://yantragene.co.in/login" class="btn btn-lg btn-success">Yantragene login</a>
+              </center>
             </div>
         </div>
     </div>

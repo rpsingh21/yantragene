@@ -16,12 +16,12 @@ $i=1;
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href="{{url('public/css/sponsors.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <script src="{{url('public/js/pace.js')}}"></script>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
-    <link rel="{{url('public/css/nav.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="{{url('css/sponsors.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <script src="{{url('js/pace.js')}}"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+    <link rel="{{url('css/nav.css')}}">
 </head>
 
 <body>
@@ -158,43 +158,47 @@ $i=1;
 </nav>
 <div style="margin-top: 50px;" class="container">
     <h1 class="w3-center">Our Sponsors</h1>
+    <center>
+        <img src="{{url("images/coming-soon.png")}}"/>
+    </center>
+
     <div class="section-title">
-        <h2>TITLE SPONSOR</h2>
-        <h4></h4>
+        <!-- <h2>TITLE SPONSOR</h2>
+        <h4></h4> -->
     </div>
-    <section class="row breath planpricing">
+    <!-- <section class="row breath planpricing">
 
         <div class="col-md-3">
             <div class="pricing color1">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("/public/images/csi.png")}}"></div>
+                <div class="price"><img src="{{url("images/csi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color2">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/iste.png")}}"></div>
+                <div class="price"><img src="{{url("images/iste.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color3">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/kl.png")}}"></div>
+                <div class="price"><img src="{{url("images/kl.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color3">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/csi.png")}}"></div>
+                <div class="price"><img src="{{url("images/csi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
     </section>
 
     <div class="section-title">
@@ -206,34 +210,34 @@ $i=1;
         <div class="col-md-3">
             <div class="pricing color1">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/csi.png")}}"></div>
+                <div class="price"><img src="{{url("images/csi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color2">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/csi.png")}}"></div>
+                <div class="price"><img src="{{url("images/csi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color3">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/csi.png")}}"></div>
+                <div class="price"><img src="{{url("images/csi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
+            <div class="planname">CSI</div>
             <div class="pricing color3">
-                <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/csi.png")}}"></div>
+                <div class="price"><img src="{{url("images/csi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
     </section>
 
     <div class="section-title">
@@ -245,34 +249,34 @@ $i=1;
         <div class="col-md-3">
             <div class="pricing color1">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/toi.png")}}"></div>
+                <div class="price"><img src="{{url("images/toi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color2">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/hindu.png")}}"></div>
+                <div class="price"><img src="{{url("images/hindu.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color3">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/toi.png")}}"></div>
+                <div class="price"><img src="{{url("images/toi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color3">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/toi.png")}}"></div>
+                <div class="price"><img src="{{url("images/toi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
     </section>
     <div class="section-title">
         <h2>SOCIAL PARTNER</h2>
@@ -283,34 +287,34 @@ $i=1;
         <div class="col-md-3">
             <div class="pricing color1">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/f.png")}}"></div>
+                <div class="price"><img src="{{url("images/f.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color2">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/fm.png")}}"></div>
+                <div class="price"><img src="{{url("images/fm.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color3">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/ln.png")}}"></div>
+                <div class="price"><img src="{{url("images/ln.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color3">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/tw.png")}}"></div>
+                <div class="price"><img src="{{url("images/tw.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
     </section>
     <div class="section-title">
         <h2>BANKING PARTNER</h2>
@@ -321,34 +325,34 @@ $i=1;
         <div class="col-md-3">
             <div class="pricing color1">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/csi.png")}}"></div>
+                <div class="price"><img src="{{url("images/csi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color2">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/csi.png")}}"></div>
+                <div class="price"><img src="{{url("images/csi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color3">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/csi.png")}}"></div>
+                <div class="price"><img src="{{url("images/csi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color3">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/csi.png")}}"></div>
+                <div class="price"><img src="{{url("images/csi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
     </section>
     <div class="section-title">
         <h2>FOOD PARTNER</h2>
@@ -359,38 +363,38 @@ $i=1;
         <div class="col-md-3">
             <div class="pricing color1">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/csi.png")}}"></div>
+                <div class="price"><img src="{{url("images/csi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color2">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/csi.png")}}"></div>
+                <div class="price"><img src="{{url("images/csi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color3">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/csi.png")}}"></div>
+                <div class="price"><img src="{{url("images/csi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
 
         <div class="col-md-3">
             <div class="pricing color3">
                 <div class="planname">CSI</div>
-                <div class="price"><img src="{{url("public/images/csi.png")}}"></div>
+                <div class="price"><img src="{{url("images/csi.png")}}"></div>
                 <div class="billing">computer society of india</div>
-            </div><! --/pricing -->
-        </div><! --/col-md-4-->
+            </div>
+        </div>
     </section>
 
 
-</div>
+</div> -->
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -407,6 +411,16 @@ $i=1;
             return false;
         });
     });
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115331050-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115331050-1');
 </script>
 
 </body>

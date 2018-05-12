@@ -12,9 +12,9 @@
     <title>Admin Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <link href="{{url('public/dist/css/metisMenu.min.css')}}" rel="stylesheet">
+    <link href="{{url('/dist/css/metisMenu.min.css')}}" rel="stylesheet">
 
-    <link href="{{url('public/dist/css/sb-admin-2.css')}}" rel="stylesheet">
+    <link href="{{url('/dist/css/sb-admin-2.css')}}" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -82,10 +82,10 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- Metis Menu Plugin JavaScript -->
-<script src="{{url('public/dist/js/metisMenu.min.js')}}"></script>
+<script src="{{url('/dist/js/metisMenu.min.js')}}"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="{{url('public/dist/js/sb-admin-2.js')}}"></script>
+<script src="{{url('/dist/js/sb-admin-2.js')}}"></script>
 
 </body>
 

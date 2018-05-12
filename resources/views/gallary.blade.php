@@ -1,98 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Grid Loading and Hover Effect | Demo 1</title>
-    <meta name="description" content="Yantragene  gallary" />
-    <link rel="stylesheet" type="text/css" href="{{url('/public/gallary')}}/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="{{url('/public/gallary')}}/css/gallary.css" />
-    <link rel="stylesheet" type="text/css" href="{{url('/public/gallary')}}/css/component.css" />
-    <style>#particles-js {
-            background-color:#222233;
-            position:fixed;
-            top:0;
-            right:0;
-            bottom:0;
-            left:0;
-            z-index:-1;
-        }
-        .form{
-            background: rgba(25,25,25,0.5);
-            color:#222233;
-        }
-    </style>
+
+    <title>YANTRAGENE GALLARY</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="{{url('/yantrageneGallary')}}/Font-Awesome-4.7/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{url('/yantrageneGallary')}}/css/bootstrap.min.css">
+    <!-- Bootstrap style -->
+    <link rel="stylesheet" href="{{url('/yantrageneGallary')}}/css/hero-slider-style.css">
+    <!-- Hero slider style (https://codyhouse.co/gem/hero-slider/) -->
+    <link rel="stylesheet" href="{{url('/yantrageneGallary')}}/css/magnific-popup.css">
+    <!-- Magnific popup style (http://dimsemenov.com/plugins/magnific-popup/) -->
+    <link rel="stylesheet" href="{{url('/yantrageneGallary')}}/css/templatemo-style.css">
+
+        <script src="{{url('/yantrageneGallary')}}/js/jquery-1.11.3.min.js"></script>
+
+        <script>
+            var tm_gray_site = false;
+            if(tm_gray_site) {
+                $('html').addClass('gray');
+            }
+            else {
+                $('html').removeClass('gray');
+            }
+        </script>
 </head>
+
 <body>
-<div class="container">
-    <!-- Top Navigation -->
-    <div id="particles-js"></div>
-    <section class="grid-wrap">
-        <ul class="grid swipe-right" id="grid">
-            <li class="title-box">
-                <h2>Yantragene 2k16 Gallary</h2>
+    <div class="cd-hero">
+        <div class="cd-slider-nav">
+
+        </div>
+        <ul class="cd-hero-slider">
+            <li class="selected">
+                <div class="cd-full-width">
+                    <div class="container-fluid js-tm-page-content" data-page-no="1" data-page-type="gallery">
+                        <div class="tm-img-gallery-container">
+                            <div class="tm-img-gallery gallery-one">
+                            <!-- Gallery One pop up connected with JS code below -->
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene1.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene1.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene2.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene2.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene3.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></span></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene3.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene4.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene4.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene5.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene5.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene5.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene5.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene6.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene6.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene7.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene7.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene8.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene8.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene9.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene9.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene10.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene10.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene11.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene11.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene13.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene13.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene14.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene14.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene101.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene101.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene102.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene102.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene103.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene103.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene104.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene104.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene105.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene105.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene106.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene106.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene107.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene107.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene108.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene108.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene109.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene109.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene110.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene110.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene111.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene111.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene201.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene201.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene112.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene112.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene113.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene113.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene114.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene114.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img src="{{url('/yantrageneGallary')}}/img/yantragene115.jpg" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title"></h2>
+                                            <p class="tm-figure-description"></p>
+                                            <a href="{{url('/yantrageneGallary')}}/img/yantragene115.jpg">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="{{url('/public/gallary')}}/img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
         </ul>
-    </section>
+    </div>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <script src="{{url('/yantrageneGallary')}}/js/tether.min.js"></script>
+    <script src="{{url('/yantrageneGallary')}}/js/bootstrap.min.js"></script>
+    <script src="{{url('/yantrageneGallary')}}/js/hero-slider-main.js"></script>
+    <script src="{{url('/yantrageneGallary')}}/js/jquery.magnific-popup.min.js"></script>
 
-</div><!-- /container -->
+        <script>
 
-<script src="{{url('/public/gallary')}}/js/modernizr.custom.js"></script>
-<script src="{{url('/public/gallary')}}/js/masonry.pkgd.min.js"></script>
-<script src="{{url('/public/gallary')}}/js/imagesloaded.pkgd.min.js"></script>
-<script src="{{url('/public/gallary')}}/js/classie.js"></script>
-<script src="{{url('/public/gallary')}}/js/colorfinder-1.1.js"></script>
-<script src="{{url('/public/gallary')}}/js/gridScrollFx.js"></script>
-<script>
-    new GridScrollFx( document.getElementById( 'grid' ), {
-        viewportFactor : 0.4
-    } );
-</script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-    particlesJS("particles-js", {"particles":{"number":{"value":200,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":1,"random":true,"anim":{"enable":true,"speed":1,"opacity_min":0,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":4,"size_min":0.3,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":1,"direction":"top","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":600}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":250,"size":0,"duration":2,"opacity":0,"speed":3},"repulse":{"distance":400,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
-</script>
+            function adjustHeightOfPage(pageNo) {
+
+                var pageContentHeight = 0;
+
+                var pageType = $('div[data-page-no="' + pageNo + '"]').data("page-type");
+
+                if( pageType != undefined && pageType == "gallery") {
+                    pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .tm-img-gallery-container").height();
+                }
+                else {
+                    pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .js-tm-page-content").height() + 20;
+                }
+                var totalPageHeight = $('.cd-slider-nav').height()
+                                        + pageContentHeight
+                                        + $('.tm-footer').outerHeight();
+
+                if(totalPageHeight > $(window).height())
+                {
+                    $('.cd-hero-slider').addClass('small-screen');
+                    $('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", totalPageHeight + "px");
+                }
+                else
+                {
+                    $('.cd-hero-slider').removeClass('small-screen');
+                    $('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", "100%");
+                }
+            }
+            $(window).load(function(){
+
+                adjustHeightOfPage(1);
+                $('.gallery-one').magnificPopup({
+                    delegate: 'a',
+                    type: 'image',
+                    gallery:{enabled:true}
+                });
+				$('.gallery-two').magnificPopup({
+                    delegate: 'a',
+                    type: 'image',
+                    gallery:{enabled:true}
+                });
+                $('.gallery-three').magnificPopup({
+                    delegate: 'a',
+                    type: 'image',
+                    gallery:{enabled:true}
+                });
+                $('#tmNavbar a').click(function(){
+                    $('#tmNavbar').collapse('hide');
+
+                    adjustHeightOfPage($(this).data("no")); // Adjust page height
+                });
+                $( window ).resize(function() {
+                    var currentPageNo = $(".cd-hero-slider li.selected .js-tm-page-content").data("page-no");
+                    setTimeout(function() {
+                        adjustHeightOfPage( currentPageNo );
+                    }, 1000);
+
+                });
+                $('body').addClass('loaded');
+                $(".tm-copyright-year").text(new Date().getFullYear());
+
+            });
+            var map = '';
+            var center;
+
+            function initialize() {
+                var mapOptions = {
+                    zoom: 13,
+                    center: new google.maps.LatLng(37.779724, -122.452152),
+                    scrollwheel: false
+                };
+
+                map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+
+                google.maps.event.addDomListener(map, 'idle', function() {
+                  calculateCenter();
+                });
+
+                google.maps.event.addDomListener(window, 'resize', function() {
+                  map.setCenter(center);
+                });
+            }
+
+            function calculateCenter() {
+                center = map.getCenter();
+            }
+
+            function loadGoogleMap(){
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
+                document.body.appendChild(script);
+            }
+            $(function() {
+                loadGoogleMap(); // Google Map
+            });
+        </script>
 </body>
 </html>

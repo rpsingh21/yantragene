@@ -7,10 +7,10 @@
     <title>DASHBORD</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="{{url('public/css/sponsors.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <script src="{{url('public/js/pace.js')}}"></script>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+    <link href="{{url('/css/sponsors.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <script src="{{url('/js/pace.js')}}"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
