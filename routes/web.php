@@ -11,22 +11,22 @@ route::get('/gallary',function (){
 // ----------------------admin route for handing the events-------------------------
 
 route::group(['middleware'=>'adminlog'],function (){
-    route::get('/admin/dashbord','adminController@adminDashbord');
-    route::get('/admin/createCo','adminController@goCreateCo');
-    route::post('/admin/createCo','adminController@createCo');
-    route::get('/adminlogout','adminController@adminLogout');
-    route::get('/admin/allTeam','adminController@teamTable');
-    route::get('/admin/alluser','adminController@allUser');
-    route::get('/admin/notVerify','adminController@notVerifyUser');
-    route::get('/admin/totalEvent','adminController@totalEvent');
+    route::get('/admin/dashbord',[adminController::class,'adminDashbord']);
+    route::get('/admin/createCo',[adminController::class,'goCreateCo']);
+    route::post('/admin/createCo',[adminController::class,'createCo']);
+    route::get('/adminlogout',[adminController::class,'adminLogout']);
+    route::get('/admin/allTeam',[adminController::class,'teamTable']);
+    route::get('/admin/alluser',[adminController::class,'allUser']);
+    route::get('/admin/notVerify',[adminController::class,'notVerifyUser']);
+    route::get('/admin/totalEvent',[adminController::class,'totalEvent']);
 });
 
 route::group(['middleware'=>'adminWithout'],function (){
     route::get('/admin',function (){
         return view('admin.adminLogin');
     });
-    route::post('/admin/login','adminController@login');
-    route::get('/admin/login','adminController@login');
+    route::post('/admin/login',[adminController::class,'login']);
+    route::get('/admin/login',[adminController::class,'login']);
 });
 
 //------------------------------- co routes ------------------------------------------
@@ -35,11 +35,11 @@ route::group(['middleware'=>'coWithout'],function (){
     route::get('/co',function (){
         return view('co.coLogin');
     });
-    Route::match(['get', 'post'], '/co/login','coController@coLogin');
+    Route::match(['get', 'post'], '/co/login',[coController::class,'coLogin']);
 });
 
 route::group(['middleware'=>'coLogin'],function (){
-    route::get('/co/dashbord','coController@dashbord');
+    route::get('/co/dashbord',[coController::class,'dashbord']);
 });
 
 //---------------------------------user routes----------------------------------------
@@ -60,4 +60,4 @@ route::group(['middleware'=>'userWithout'],function (){
     route::post('/reg/verify/otp','userAuth@otpVerify');
     route::get('/reg/verify/otp','userAuth@otpVerify');
 });
-route::get('/teamreg','teamRegController@index');
+route::get('/teamreg',[teamRegController::class,'index']);
